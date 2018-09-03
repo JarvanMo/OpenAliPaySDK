@@ -1,0 +1,11 @@
+_Store
+.dart_tool/
+
+.packages
+.pub/
+pubspec.lock
+
+build/
+*.iml
+.idea/
+
