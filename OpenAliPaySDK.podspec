@@ -32,7 +32,6 @@ Pod::Spec.new do |s|
   s.source        = { :git => "https://github.com/StenpZ/AliPaySDK_SZ.git", :tag => "#{s.version}" }
 
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
   s.resource      = "OpenAliPaySDK/AlipaySDK.bundle"
   s.frameworks    = "Foundation", "UIKit", "SystemConfiguration", "CoreTelephony", "QuartzCore", "CoreText", "CoreGraphics", "CFNetwork", "CoreMotion"
