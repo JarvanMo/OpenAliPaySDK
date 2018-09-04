@@ -92,7 +92,13 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
+  s.resource      = "OpenAliPaySDK/AlipaySDK.bundle"
+  s.frameworks    = "Foundation", "UIKit", "SystemConfiguration", "CoreTelephony", "QuartzCore", "CoreText", "CoreGraphics", "CFNetwork", "CoreMotion"
+  s.libraries     = "z", "c++"
+  s.vendored_frameworks = "OpenAliPaySDK/AlipaySDK.framework"
 
+  s.platform      = :ios,'7.0'
+  s.requires_arc  = true
   # s.public_header_files = "Classes/**/*.h"
 
 
