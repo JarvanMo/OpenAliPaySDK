@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
                    Mirror Of AliPaySDK. Make it easier.
+                   DESC
 
   s.homepage     = "https://github.com/JarvanMo/OpenAliPaySDK"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
