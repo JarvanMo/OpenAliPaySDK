@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CDB5E2D7213D390A00511583 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDB5E2D5213D390A00511583 /* AlipaySDK.bundle */; };
 		CDB5E2D8213D390A00511583 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB5E2D6213D390A00511583 /* AlipaySDK.framework */; };
+		CDB5E2DB213D3DDB00511583 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB5E2DA213D3DDB00511583 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		CDB5E2CE213D38EF00511583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB5E2D5213D390A00511583 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = "../../../../Desktop/WS_APP_PAY_SDK_BASE_2.0/Demo/iOSDemo_2.0(SDK_15.5.5)/AlipaySDK.bundle"; sourceTree = "<group>"; };
 		CDB5E2D6213D390A00511583 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = "../../../../Desktop/WS_APP_PAY_SDK_BASE_2.0/Demo/iOSDemo_2.0(SDK_15.5.5)/AlipaySDK.framework"; sourceTree = "<group>"; };
+		CDB5E2DA213D3DDB00511583 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB5E2DB213D3DDB00511583 /* SystemConfiguration.framework in Frameworks */,
 				CDB5E2D8213D390A00511583 /* AlipaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,6 +38,7 @@
 			children = (
 				CDB5E2CC213D38EF00511583 /* OpenAliPaySDK */,
 				CDB5E2CB213D38EF00511583 /* Products */,
+				CDB5E2D9213D3DDB00511583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +58,14 @@
 				CDB5E2CE213D38EF00511583 /* Info.plist */,
 			);
 			path = OpenAliPaySDK;
+			sourceTree = "<group>";
+		};
+		CDB5E2D9213D3DDB00511583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5E2DA213D3DDB00511583 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
