@@ -13,7 +13,6 @@
 
 /* Begin PBXFileReference section */
 		CDB5E2CA213D38EF00511583 /* OpenAliPaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenAliPaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDB5E2CE213D38EF00511583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB5E2DA213D3DDB00511583 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CDB5E2DC213E2B2100511583 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		CDB5E2DD213E2B2100511583 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
@@ -53,7 +52,6 @@
 			children = (
 				CDB5E2DC213E2B2100511583 /* AlipaySDK.bundle */,
 				CDB5E2DD213E2B2100511583 /* AlipaySDK.framework */,
-				CDB5E2CE213D38EF00511583 /* Info.plist */,
 			);
 			path = OpenAliPaySDK;
 			sourceTree = "<group>";
