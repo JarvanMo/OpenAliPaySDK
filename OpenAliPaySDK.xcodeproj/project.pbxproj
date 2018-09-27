@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CDB5E2DB213D3DDB00511583 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB5E2DA213D3DDB00511583 /* SystemConfiguration.framework */; };
-		CDB5E2DE213E2B2100511583 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDB5E2DC213E2B2100511583 /* AlipaySDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CDB5E2CA213D38EF00511583 /* OpenAliPaySDK-J.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "OpenAliPaySDK-J.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB5E2CA213D38EF00511583 /* OpenAliPaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenAliPaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB5E2DA213D3DDB00511583 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CDB5E2DC213E2B2100511583 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		CDB5E2DD213E2B2100511583 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
@@ -42,7 +41,7 @@
 		CDB5E2CB213D38EF00511583 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CDB5E2CA213D38EF00511583 /* OpenAliPaySDK-J.framework */,
+				CDB5E2CA213D38EF00511583 /* OpenAliPaySDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +91,7 @@
 			);
 			name = OpenAliPaySDK;
 			productName = OpenAliPaySDK;
-			productReference = CDB5E2CA213D38EF00511583 /* OpenAliPaySDK-J.framework */;
+			productReference = CDB5E2CA213D38EF00511583 /* OpenAliPaySDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +130,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB5E2DE213E2B2100511583 /* AlipaySDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +286,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jarvanmo.OpenAliPaySDK;
-				PRODUCT_NAME = "OpenAliPaySDK-J";
+				PRODUCT_NAME = "${PROJECT_NAME}";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,7 +314,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jarvanmo.OpenAliPaySDK;
-				PRODUCT_NAME = "OpenAliPaySDK-J";
+				PRODUCT_NAME = "${PROJECT_NAME}";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
