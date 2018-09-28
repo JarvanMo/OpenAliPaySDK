@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
   s.exclude_files = "Classes/Exclude"
   s.resource      = "AlipaySDK.bundle"
-  s.source_files  = "AlipaySDK.framework/**/*.h"
+
   s.frameworks    = "Foundation", "UIKit", "SystemConfiguration", "CoreTelephony", "QuartzCore", "CoreText", "CoreGraphics", "CFNetwork", "CoreMotion"
   s.libraries     = "z", "c++"
   s.vendored_frameworks = "AlipaySDK.framework"
