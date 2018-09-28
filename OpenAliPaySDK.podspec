@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
  
 
   s.name         = "OpenAliPaySDK"
-  s.version      = "15.5.5+3"
+  s.version      = "15.5.5+4"
   s.summary      = "Mirror Of AliPaySDK."
 
  
@@ -39,12 +39,24 @@ Pod::Spec.new do |s|
   s.libraries     = "z", "c++"
   s.vendored_frameworks = "AlipaySDK.framework"
 
-  s.source_files = 'Classes/**/*'
-  s.public_header_files = 'Classes/**/*.h'
+ 
 
   s.platform      = :ios,'7.0'
   s.requires_arc  = true
  
-
+  s.prepare_command = <<-EOF
+    # 创建Base Module
+    rm -rf AlipaySDK.framework/Modules
+    mkdir AlipaySDK.framework/Modules
+    touch AlipaySDK.framework/Modules/module.modulemap
+    cat <<-EOF > AlipaySDK.framework/Modules/module.modulemap
+    framework module AlipaySDK {
+      umbrella header "AlipaySDK.h"
+      export *
+      link "c++"
+      link "z"
+    }
+    \EOF
+  EOF
 
 end
