@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.author             = { "JarvanMo" => "jarvan.mo@gmail.com" }
   s.source        = { :git => "https://github.com/JarvanMo/OpenAliPaySDK.git", :tag => "#{s.version}" }
 
-  s.source_files = 'AlipaySDK.framework/**/*'
+  
   s.exclude_files = "Classes/Exclude"
   s.resource      = "AlipaySDK.bundle"
 
@@ -39,7 +39,8 @@ Pod::Spec.new do |s|
   s.libraries     = "z", "c++"
   s.vendored_frameworks = "AlipaySDK.framework"
 
-  s.public_header_files = "AlipaySDK.framework/Headers/**/*.h"
+  s.source_files = 'Classes/**/*'
+  s.public_header_files = 'Classes/**/*.h'
 
   s.platform      = :ios,'7.0'
   s.requires_arc  = true
