@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.author             = { "JarvanMo" => "jarvan.mo@gmail.com" }
   s.source        = { :git => "https://github.com/JarvanMo/OpenAliPaySDK.git", :tag => "#{s.version}" }
 
-  s.source_files = 'AlipaySDK.framework/Classes/**/*'
+  s.source_files = 'AlipaySDK.framework/**/*'
   s.exclude_files = "Classes/Exclude"
   s.resource      = "AlipaySDK.bundle"
 
