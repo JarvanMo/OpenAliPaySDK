@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   s.libraries     = "z", "c++"
   s.vendored_frameworks = "AlipaySDK.framework"
 
- 
+  s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
 
   s.platform      = :ios,'8.0'
   s.requires_arc  = true
