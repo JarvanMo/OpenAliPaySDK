@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
  
 
   s.name         = "OpenAliPaySDK"
-  s.version      = "15.6.4"
+  s.version      = "15.6.5"
   s.summary      = "Mirror Of AliPaySDK."
 
  
