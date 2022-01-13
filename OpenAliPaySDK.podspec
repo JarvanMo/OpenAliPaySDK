@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
  
 
   s.name         = "OpenAliPaySDK"
-  s.version      = "15.6.5"
+  s.version      = "15.8.06"
   s.summary      = "Mirror Of AliPaySDK."
 
  
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
 
-  s.platform      = :ios,'8.0'
+  s.platform      = :ios,'9.0'
   s.requires_arc  = true
  
   s.prepare_command = <<-EOF
