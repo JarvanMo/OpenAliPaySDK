@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   # s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
 
   s.platform      = :ios,'9.0'
-  # s.requires_arc  = true
+  s.requires_arc  = true
  
   # s.prepare_command = <<-EOF
   #   # 创建Base Module
