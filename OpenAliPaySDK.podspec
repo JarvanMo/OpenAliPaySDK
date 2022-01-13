@@ -32,31 +32,31 @@ Pod::Spec.new do |s|
   s.source        = { :git => "https://github.com/JarvanMo/OpenAliPaySDK.git", :tag => "#{s.version}" }
 
   
-  s.exclude_files = "Classes/Exclude"
+  # s.exclude_files = "Classes/Exclude"
   s.resource      = "AlipaySDK.bundle"
 
   s.frameworks    = "Foundation", "UIKit", "SystemConfiguration", "CoreTelephony", "QuartzCore", "CoreText", "CoreGraphics", "CFNetwork", "CoreMotion", "WebKit"
   s.libraries     = "z", "c++"
   s.vendored_frameworks = "AlipaySDK.framework"
 
-  s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
+  # s.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
 
-  s.platform      = :ios,'9.0'
-  s.requires_arc  = true
+  # s.platform      = :ios,'9.0'
+  # s.requires_arc  = true
  
-  s.prepare_command = <<-EOF
-    # 创建Base Module
-    rm -rf AlipaySDK.framework/Modules
-    mkdir AlipaySDK.framework/Modules
-    touch AlipaySDK.framework/Modules/module.modulemap
-    cat <<-EOF > AlipaySDK.framework/Modules/module.modulemap
-    framework module AlipaySDK {
-      umbrella header "AlipaySDK.h"
-      export *
-      link "c++"
-      link "z"
-    }
-    \EOF
-  EOF
+  # s.prepare_command = <<-EOF
+  #   # 创建Base Module
+  #   rm -rf AlipaySDK.framework/Modules
+  #   mkdir AlipaySDK.framework/Modules
+  #   touch AlipaySDK.framework/Modules/module.modulemap
+  #   cat <<-EOF > AlipaySDK.framework/Modules/module.modulemap
+  #   framework module AlipaySDK {
+  #     umbrella header "AlipaySDK.h"
+  #     export *
+  #     link "c++"
+  #     link "z"
+  #   }
+  #   \EOF
+  # EOF
 
 end
